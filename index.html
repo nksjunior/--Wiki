@@ -56,7 +56,7 @@
 
         .meaning-box {
             background: rgba(255, 255, 255, 0.12);
-            margin: 20px auto 40px;
+            margin: 20px auto;
             padding: 25px;
             border-radius: 16px;
             max-width: 800px;
@@ -64,6 +64,20 @@
         }
 
         .meaning-box h2 {
+            margin-top: 0;
+            color: #ffd1d1;
+        }
+
+        /* ===== Comment Section ===== */
+        .comment-box {
+            max-width: 800px;
+            margin: 30px auto 50px;
+            padding: 25px;
+            background: rgba(0,0,0,0.25);
+            border-radius: 16px;
+        }
+
+        .comment-box h2 {
             margin-top: 0;
             color: #ffd1d1;
         }
@@ -97,12 +111,18 @@
 
 <div class="meaning-box">
     <h2>ความหมายของดอกกุหลาบสีแดง</h2>
-    <p id="meaning-text">
+    <p>
         ดอกกุหลาบสีแดงเป็นสัญลักษณ์ของความรักที่ลึกซึ้ง
         ความปรารถนา ความหลงใหล และความจริงใจ
         มักใช้แทนคำบอกรัก การแสดงความรู้สึกจากหัวใจ
         และความสัมพันธ์ที่จริงจัง
     </p>
+</div>
+
+<!-- ===== Comment Section ===== -->
+<div class="comment-box">
+    <h2>💬 แสดงความคิดเห็น</h2>
+    <div id="disqus_thread"></div>
 </div>
 
 <footer>
@@ -115,6 +135,19 @@
         images.forEach(i => i.classList.remove("active"));
         img.classList.add("active");
     }
+
+    var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = window.location.pathname;
+    };
+
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
 
-</bo
+</body>
+</html>
