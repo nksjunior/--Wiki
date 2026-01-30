@@ -30,4 +30,110 @@
 
     .gallery {
       display: grid;
-      grid-template-column
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .meaning-box {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .meaning-box h2 {
+      margin-top: 0;
+      color: #ffd1d1;
+    }
+
+    .invite {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(0,0,0,0.25);
+      border-left: 5px solid #ffcccc;
+      border-radius: 10px;
+    }
+
+    .invite p {
+      margin: 0 0 10px 0;
+      line-height: 1.6;
+    }
+
+    .invite a {
+      color: #ffd1d1;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🌹 ดอกกุหลาบสีแดง</h1>
+    <p>สัญลักษณ์แห่งความรัก ความปรารถนา และความหลงใหล</p>
+  </header>
+
+  <section class="gallery">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Red Rose">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Red Rose">
+    <img src="https://images.unsplash.com/photo-1496062031456-07b8f162a322" alt="Red Rose">
+    <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d" alt="Red Rose">
+  </section>
+
+  <section class="meaning-box">
+    <h2>ความหมายของดอกกุหลาบสีแดง</h2>
+    <p>
+      ดอกกุหลาบสีแดงเป็นสัญลักษณ์ของความรักที่ลึกซึ้ง ความหลงใหล
+      ความโรแมนติก และความปรารถนา มักใช้แทนการบอกรัก
+      หรือแสดงความรู้สึกที่จริงใจและรุนแรงทางอารมณ์
+    </p>
+
+    <div class="invite">
+      <p>
+        <strong>ไม่ตรงใจใช่ไหม?</strong><br>
+        เพราะความรัก...คุณนิยามเองได้
+      </p>
+      <p>
+        ที่ Wikipedia เราเชื่อว่าทุกคนมีสิทธิ์แก้ไขข้อมูลให้ถูกต้อง
+        หากคุณมีมุมมองหรือความหมายอื่น ๆ
+        คุณสามารถเข้าไปดูและแก้ไขข้อมูลต้นทางได้ด้วยตัวเอง
+      </p>
+      <p>
+        👉 แหล่งข้อมูลอ้างอิง:
+        <a href="https://en.wikipedia.org/wiki/List_of_plants_with_symbolism" target="_blank">
+          List of plants with symbolism (Wikipedia)
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Rose Wiki | ข้อมูลอ้างอิงจาก Wikipedia
+  </footer>
+
+</body>
+</html>
