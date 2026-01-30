@@ -1,172 +1,33 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>ความหมายของดอกกุหลาบสีแดง</title>
+  <meta charset="UTF-8" />
+  <title>Rose Wiki | ความหมายของดอกไม้</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", sans-serif;
-            background: linear-gradient(180deg, #8b0000, #b22222);
-            color: #fff;
-        }
-
-        header {
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            opacity: 0.9;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 3px solid transparent;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery img.active {
-            border-color: #ffd1d1;
-            box-shadow: 0 0 15px rgba(255, 200, 200, 0.9);
-        }
-
-        .meaning-box {
-            background: rgba(255, 255, 255, 0.12);
-            margin: 20px auto;
-            padding: 25px;
-            border-radius: 16px;
-            max-width: 800px;
-            backdrop-filter: blur(6px);
-        }
-
-        .meaning-box h2 {
-            margin-top: 0;
-            color: #ffd1d1;
-        }
-
-        /* ===== Comment Section ===== */
-        .comment-box {
-            max-width: 800px;
-            margin: 30px auto 50px;
-            padding: 25px;
-            background: rgba(0,0,0,0.25);
-            border-radius: 16px;
-        }
-
-        .comment-box h2 {
-            margin-top: 0;
-            color: #ffd1d1;
-            text-align: center;
-        }
-
-        .invite-text {
-            text-align: center;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            opacity: 0.9;
-        }
-
-        .invite-text strong {
-            color: #ffd1d1;
-            font-size: 1.05rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>🌹 ดอกกุหลาบสีแดง</h1>
-    <p>สัญลักษณ์แห่งความรัก ความหลงใหล และความโรแมนติก</p>
-</header>
-
-<section class="gallery">
-    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
-         alt="Red Rose 1" onclick="selectImage(this)">
-    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
-         alt="Red Rose 2" onclick="selectImage(this)">
-    <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df"
-         alt="Red Rose 3" onclick="selectImage(this)">
-    <img src="https://images.unsplash.com/photo-1496062031456-07b8f162a322"
-         alt="Red Rose 4" onclick="selectImage(this)">
-</section>
-
-<div class="meaning-box">
-    <h2>ความหมายของดอกกุหลาบสีแดง</h2>
-    <p>
-        ดอกกุหลาบสีแดงเป็นสัญลักษณ์ของความรักที่ลึกซึ้ง
-        ความปรารถนา ความหลงใหล และความจริงใจ
-        มักใช้แทนคำบอกรัก การแสดงความรู้สึกจากหัวใจ
-        และความสัมพันธ์ที่จริงจัง
-    </p>
-</div>
-
-<!-- ===== Comment Section ===== -->
-<div class="comment-box">
-    <div class="invite-text">
-        <strong>ไม่ตรงใจใช่ไหม?</strong><br>
-        เพราะความรัก…คุณนิยามเองได้<br>
-        ที่ Wikipedia เราเชื่อว่าทุกคนมีสิทธิ์แก้ไขข้อมูลให้ถูกต้อง
-    </div>
-
-    <h2>💬 แสดงความคิดเห็น</h2>
-    <div id="disqus_thread"></div>
-</div>
-
-<footer>
-    © Wikilove defindluv
-</footer>
-
-<script>
-    function selectImage(img) {
-        const images = document.querySelectorAll(".gallery img");
-        images.forEach(i => i.classList.remove("active"));
-        img.classList.add("active");
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #8b0000, #b11226);
+      color: #fff;
     }
 
-    var disqus_config = function () {
-        this.page.url = window.location.href;
-        this.page.identifier = window.location.pathname;
-    };
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://wikiloved.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
 
-</body>
-</html>
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-column
